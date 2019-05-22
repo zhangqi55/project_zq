@@ -1,0 +1,54 @@
+# class A(object):
+#     def go(self):
+#         print("go A go!")
+#
+#
+# class B(A):
+#     def go(self):
+#         super(B, self).go()
+#         print("go B go!")
+#
+#
+# class C(A):
+#     def go(self):
+#         super(C, self).go()
+#         print("go C go!")
+#
+#
+# class D(B, C):
+#     def go(self):
+#         super(D, self).go()
+#         print("go D go!")
+#
+#
+# class E(B, C):
+#     pass
+#
+#
+# a = A()
+# a.go()
+# print('---')
+# b = B()
+# b.go()
+# print('---')
+# c = C()
+# c.go()
+# print('---')
+# d = D()
+# d.go()
+# print('---')
+# e = E()
+# e.go()
+fd = open("file.py")
+fd01 = open("test",'w')
+# while True:
+#     if not data:
+#         break
+#     data = fd.read(1024)
+data = fd.read()
+list = data.split("#")
+for item in list:
+    fd01.write(item)
+
+
+
